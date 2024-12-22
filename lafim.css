@@ -122,3 +122,46 @@ body {
 .text {
   word-break: break-word;
 }
+
+@media (max-width: 768px) {
+  #chat-box {
+    width: 100%;
+    height: 400px; /* Adjust height for mobile */
+  }
+
+  #input-box {
+    width: 100%; /* Full width for mobile */
+  }
+
+  #message-input {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  #send-button {
+    padding: 2%;
+    font-size: 14px; /* Adjust button size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 10px; /* Add margin for small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Reduce header size */
+  }
+
+  #chat-box {
+    height: 350px; /* Adjust height for very small screens */
+  }
+
+  #message-input {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+  }
+
+  #send-button {
+    padding: 2%;
+    font-size: 12px; /* Adjust button size for very small screens */
+  }
+}
