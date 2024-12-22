@@ -19,9 +19,9 @@ h1 {
 }
 
 #chat-box {
-  width: 90%; /* Увеличена ширина за мобилни устройства */
-  max-width: 450px; /* Максимална ширина за по-големи екрани */
-  height: 400px; /* Намалена височина за мобилни екрани */
+  width: 80%; /* Увеличена ширина за компютър */
+  max-width: 700px; /* Максимална ширина за компютър */
+  height: 500px; /* Стандартна височина */
   border: 2px solid white;
   padding: 1%;
   overflow-y: auto;
@@ -52,8 +52,8 @@ h1 {
 #input-box {
   margin-top: 1%;
   display: flex;
-  width: 90%;
-  max-width: 450px;
+  width: 80%; /* Ширина за компютър */
+  max-width: 700px;
   color: white;
 }
 
@@ -63,7 +63,7 @@ h1 {
   border: 2px solid white;
   background: #181818;
   color: white;
-  font-size: 14px; /* Намален размер на шрифта за мобилни екрани */
+  font-size: 14px; /* Стандартен размер за шрифта */
 }
 
 #send-button {
@@ -73,7 +73,7 @@ h1 {
   color: white;
   border: 2px solid white;
   cursor: pointer;
-  font-size: 14px; /* Намален размер на бутона */
+  font-size: 14px;
 }
 
 .message {
@@ -83,7 +83,7 @@ h1 {
   padding: 12px;
   border-radius: 15px;
   max-width: 100%;
-  font-size: 14px; /* Намален размер на шрифта за съобщения */
+  font-size: 14px;
 }
 
 .my-message {
@@ -131,19 +131,21 @@ h1 {
 /* Mobile-first styles */
 @media (max-width: 768px) {
   #chat-box {
-    height: 350px; /* Намалена височина за по-малки екрани */
+    width: 90%; /* Увеличена ширина за мобилни устройства */
+    max-width: 500px; /* Ограничена максимална ширина */
+    height: 350px; /* Намалена височина за мобилни устройства */
   }
 
   #input-box {
-    width: 100%;
+    width: 90%; /* Увеличена ширина за мобилни устройства */
   }
 
   #message-input {
-    font-size: 12px;
+    font-size: 12px; /* Намален размер на шрифта за мобилни устройства */
   }
 
   #send-button {
-    padding: 5px;
+    padding: 6px;
     font-size: 12px;
   }
 }
@@ -158,7 +160,8 @@ h1 {
   }
 
   #chat-box {
-    height: 300px; /* Намалена височина за най-малки екрани */
+    width: 90%; /* Увеличена ширина за много малки екрани */
+    height: 300px; /* Намалена височина за малки екрани */
   }
 
   #message-input {
@@ -166,7 +169,7 @@ h1 {
   }
 
   #send-button {
-    padding: 5px;
+    padding: 6px;
     font-size: 12px;
   }
 }
