@@ -1,4 +1,4 @@
-/* Base Styles */
+
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
@@ -19,14 +19,15 @@ h1 {
 }
 
 #chat-box {
-  width: 80%; /* Увеличена ширина за компютър */
-  max-width: 700px; /* Максимална ширина за компютър */
-  height: 500px; /* Стандартна височина */
-  border: 2px solid white;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  border: 3px solid white;
   padding: 1%;
   overflow-y: auto;
   background: #181818;
   color: white;
+  border-radius: 30px;
 }
 
 #chat-box div {
@@ -37,14 +38,16 @@ h1 {
 
 #chat-box .user {
   font-weight: bold;
+  font-size: 16px;
 }
 
 #chat-box .text {
   display: inline;
+  font-size: 14px;
 }
 
 #chat-box .time {
-  font-size: 13px;
+  font-size: 12px;
   color: white;
   margin-left: auto;
 }
@@ -52,18 +55,19 @@ h1 {
 #input-box {
   margin-top: 1%;
   display: flex;
-  width: 80%; /* Ширина за компютър */
-  max-width: 700px;
+  width: 100%; 
+  max-width: 500px;
   color: white;
 }
 
 #message-input {
   flex: 1;
   padding: 8px;
-  border: 2px solid white;
+  border: 3px solid white;
   background: #181818;
   color: white;
-  font-size: 14px; /* Стандартен размер за шрифта */
+  font-size: 16px; 
+  border-radius: 30px;
 }
 
 #send-button {
@@ -71,9 +75,10 @@ h1 {
   padding: 8px;
   background: #D01C1C;
   color: white;
-  border: 2px solid white;
+  border: 3px solid white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+  border-radius: 30px;
 }
 
 .message {
@@ -129,19 +134,19 @@ h1 {
 }
 
 /* Mobile-first styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #chat-box {
-    width: 90%; /* Увеличена ширина за мобилни устройства */
-    max-width: 500px; /* Ограничена максимална ширина */
-    height: 350px; /* Намалена височина за мобилни устройства */
+    width: 80%; 
+    max-width: 300px;
+    height: 200px; 
   }
 
   #input-box {
-    width: 90%; /* Увеличена ширина за мобилни устройства */
+    width: 80%; 
   }
 
   #message-input {
-    font-size: 12px; /* Намален размер на шрифта за мобилни устройства */
+    font-size: 12px; 
   }
 
   #send-button {
@@ -156,12 +161,12 @@ h1 {
   }
 
   h1 {
-    font-size: 18px; /* Още по-малък размер на заглавието */
+    font-size: 18px; 
   }
 
   #chat-box {
-    width: 90%; /* Увеличена ширина за много малки екрани */
-    height: 300px; /* Намалена височина за малки екрани */
+    width: 80%;
+    height: 300px;
   }
 
   #message-input {
