@@ -1,0 +1,124 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    height: 100%;
+    background: #121212;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  
+  #chat-box {
+    width: 500px;
+    height: 500px;
+    border: 3px solid white;
+    padding: 1%;
+    overflow-y: auto;
+    background: #181818;
+    color: white;
+  }
+  
+  #chat-box div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #chat-box .user {
+    font-weight: bold;
+  }
+  
+  #chat-box .text {
+    display: inline;
+  }
+  
+  #chat-box .time {
+    font-size: 15px;
+    color: white;
+    margin-left: auto; 
+  }
+  
+  #input-box {
+    margin-top: 1%;
+    display: flex;
+    width: 500px;
+    color: white;
+  }
+  
+  #message-input {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid white;
+    background: #181818;
+    color: white;
+  }
+  
+  #send-button {
+    margin-left: 1%;
+    padding: 3%;
+    background: #D01C1C;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+  }
+
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+  
+  .my-message {
+    justify-content: flex-end;
+    background-color: #333;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+    position: relative;
+  }
+  
+  .my-message .time {
+    position: absolute;
+    left: 2%;
+    text-align: left;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .other-message {
+    justify-content: flex-start;
+    background-color: #222;
+    color: white;
+    margin-right: auto;
+    text-align: left;
+    position: relative;
+  }
+  
+  .other-message .time {
+    position: absolute;
+    right: 10px; /* Леко навътре */
+    text-align: right;
+    color: white;
+    font-size: 1em;
+  }
+  
+  
+.user {
+  font-weight: bold;
+}
+
+.text {
+  word-break: break-word;
+}
